@@ -3,12 +3,22 @@
 <head>
   <title>Tab Grouper</title>
   <style>
-    body { width: 200px; padding: 20px; }
+    body {
+      width: 200px;
+      font-family: Arial, sans-serif;
+    }
+    #buttons {
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <h3>Tab Grouper</h3>
   <button id="groupTabs">Group All Tabs</button>
+  <button id="ungroupTabs">Ungroup All Tabs</button>
+  <div id="toggleGrouping">
+    <input type="checkbox" id="groupingToggle" checked />
+    <label for="groupingToggle">Auto Grouping</label>
+  </div>
   <script src="popup.js"></script>
 </body>
 </html>
